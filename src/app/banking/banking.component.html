@@ -1,0 +1,24 @@
+<p>
+  Olá,<strong> John Bueno.</strong>
+</p>
+<p>
+  Sua conta AG:<strong>9999</strong>, CO:<strong>99999-9.</strong>
+</p>
+
+
+<p>
+  <!-- Cuidado com espaços quando for fazer teste interface exemplo x aonde vai ter espaço em branco
+  <span>XX{{getPoupanca}}XX</span> espaço gera erro no teste de interface.
+  -->
+  Poupança: R$ <span id="get-poupanca">{{getPoupanca}}</span>
+  <input id="input-sacar" type="text" #sacar>
+</p>
+<button id="sacar" (click)="setSacar(sacar.value)">Sacar</button>
+<br>
+
+<p>
+  Carteira: R$ {{getCarteira}}
+  <input  id="input-depositar" type="text" #depositar>
+</p>
+<button id="depositar" (click)="setDepositar(depositar.value)">Depositar</button>
+<br>
